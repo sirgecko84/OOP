@@ -15,6 +15,9 @@ public class CartTest {
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", "Guy Ritchie", 128, 18.99f);
         cart.addDigitalVideoDisc(dvd3);
 
+        DigitalVideoDisc dvd4 = new DigitalVideoDisc("Cindarella", "Animation", "Khanh Truong", 173, 17.99f);
+        cart.addDigitalVideoDisc(dvd4);
+
         // Kiểm tra phương thức in giỏ hàng
         cart.print();
 
