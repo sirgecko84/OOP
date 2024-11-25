@@ -1,0 +1,3 @@
+Question 1: Try to add a method addDigitalVideoDisc which allows to pass an arbitrary number of arguments for dvd. Compare to an array parameter. What do you prefer in this case?
+Phương thức mới đã được tạo và comment lại(do trùng chữ ký với phương thức cũ"). Phương thức này cho phép truyền một lượng tham số không xác định thay vì một mảng.
+Em thích phương thức này hơn vì điều này làm cho mã ngắn gọn và dễ đọc hơn, đặc biệt khi chúng ta chỉ cần thêm một vài đối tượng mà không muốn tạo mảng.
