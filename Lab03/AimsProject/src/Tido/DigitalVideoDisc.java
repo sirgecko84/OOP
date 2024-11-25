@@ -7,10 +7,11 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
 
-    //5. Classifier member and Instance member
+    // Classifier member and Instance member
     private static int nbDigitalVideoDiscs = 0; // class variable to count DVDs
     private int id; // instance variable to hold the unique id
 
+    // Getters
     public String getTitle() {
         return title;
     }
@@ -80,5 +81,18 @@ public class DigitalVideoDisc {
     // Getter for nbDigitalVideoDiscs
     public static int getNbDigitalVideoDiscs() {
         return nbDigitalVideoDiscs;
+    }
+
+    // Phương thức isMatch để tìm kiếm tiêu đề
+    public boolean isMatch(String title) {
+        return this.title.equalsIgnoreCase(title); // So sánh không phân biệt hoa thường
+    }
+
+    // Phương thức toString để in thông tin DVD
+    @Override
+    public String toString() {
+        return "DVD - " + title + " - " + category + " - " 
+                + (director != null ? director : "N/A") + " - " 
+                + (length > 0 ? length : "N/A") + ": " + cost + " $";
     }
 }
