@@ -1,3 +1,17 @@
 Question 1: Try to add a method addDigitalVideoDisc which allows to pass an arbitrary number of arguments for dvd. Compare to an array parameter. What do you prefer in this case?
 Phương thức mới đã được tạo và comment lại(do trùng chữ ký với phương thức cũ"). Phương thức này cho phép truyền một lượng tham số không xác định thay vì một mảng.
 Em thích phương thức này hơn vì điều này làm cho mã ngắn gọn và dễ đọc hơn, đặc biệt khi chúng ta chỉ cần thêm một vài đối tượng mà không muốn tạo mảng.
+
+Question 2: After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+
+Trong Java, các tham số của phương thức được truyền theo giá trị (pass by value), ngay cả đối với đối tượng.
+Khi gọi swap(jungleDVD, cinderellaDVD), các tham số jungleDVD và cinderellaDVD được sao chép giá trị của chúng (địa chỉ bộ nhớ của các đối tượng), và phương thức swap thay đổi các tham số sao chép này. 
+Tuy nhiên, các tham số gốc (các đối tượng ban đầu trong phương thức main) không bị thay đổi, vì các tham số trong phương thức swap chỉ là các bản sao của các đối tượng gốc. 
+Vì vậy, sau khi phương thức swap kết thúc, jungleDVD và cinderellaDVD vẫn giữ nguyên giá trị tiêu đề của chúng.
+
+Question 3:After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+
+Trong trường hợp này, tham số jungleDVD được truyền vào phương thức changeTitle theo tham chiếu đến đối tượng jungleDVD. 
+Mặc dù Java truyền tham số theo giá trị, nhưng đối với các đối tượng, giá trị mà Java sao chép là tham chiếu (địa chỉ bộ nhớ của đối tượng), chứ không phải bản sao của đối tượng. 
+Khi gọi changeTitle(jungleDVD, cinderellaDVD.getTitle()), tham chiếu đến đối tượng jungleDVD được truyền vào, do đó, phương thức changeTitle có thể thay đổi thuộc tính của đối tượng này (tiêu đề của jungleDVD). 
+Khi dvd.setTitle(title) được gọi trong phương thức, nó thay đổi trực tiếp tiêu đề của đối tượng jungleDVD được truyền vào, vì tham chiếu đó thực sự trỏ đến đối tượng gốc.
