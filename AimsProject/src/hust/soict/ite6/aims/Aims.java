@@ -1,4 +1,7 @@
-package Tido;
+package hust.soict.ite6.aims;
+import hust.soict.ite6.aims.disc.DigitalVideoDisc;
+import hust.soict.ite6.aims.cart.Cart;
+import hust.soict.ite6.aims.store.Store;
 
 public class Aims {
 

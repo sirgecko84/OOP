@@ -1,4 +1,5 @@
-package Tido;
+package hust.soict.ite6.cart.aims;
+import hust.soict.ite6.aims.disc.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;

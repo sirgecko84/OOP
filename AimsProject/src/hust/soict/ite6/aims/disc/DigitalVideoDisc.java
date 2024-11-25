@@ -1,4 +1,4 @@
-package Tido;
+package hust.soict.ite6.aims.disc;
 
 public class DigitalVideoDisc {
     private String title;

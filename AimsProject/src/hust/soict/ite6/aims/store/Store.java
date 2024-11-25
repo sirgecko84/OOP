@@ -1,4 +1,7 @@
-package Tido;
+package hust.soict.ite6.aims.store;
+import hust.soict.ite6.aims.disc.DigitalVideoDisc;
+import hust.soict.ite6.aims.cart.Cart;
+
 
 public class Store {
     // Mảng lưu trữ các DVD trong cửa hàng

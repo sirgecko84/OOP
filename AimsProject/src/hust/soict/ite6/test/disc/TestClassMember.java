@@ -1,5 +1,7 @@
-package Tido;
-
+package hust.soict.ite6.test.disc;
+import hust.soict.ite6.aims.disc.DigitalVideoDisc;
+import hust.soict.ite6.aims.cart.Cart;
+import hust.soict.ite6.aims.store.Store;
 public class TestClassMember {
     public static void main(String[] args) {
         // Create some DVDs to test
