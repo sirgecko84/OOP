@@ -1,7 +1,7 @@
 package hust.soict.ite6.aims.media;
 
 // DigitalVideoDisc kế thừa từ Disc
-public class DigitalVideoDisc extends Disc {
+public class DigitalVideoDisc extends Disc implements Playable {
     // Biến static để đếm số lượng DigitalVideoDisc
     private static int nbDigitalVideoDiscs = 0;
 
@@ -41,5 +41,10 @@ public class DigitalVideoDisc extends Disc {
         return "DVD - " + getTitle() + " - " + getCategory() + " - " 
                 + (getDirector() != null ? getDirector() : "N/A") + " - " 
                 + (getLength() > 0 ? getLength() : "N/A") + ": " + getCost() + " $";
+    }
+    @Override
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
     }
 }

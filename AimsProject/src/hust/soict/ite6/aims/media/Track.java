@@ -1,6 +1,6 @@
 package hust.soict.ite6.aims.media;
 
-public class Track {
+public class Track implements Playable {
     private String title;
     private int length;
 
@@ -31,5 +31,10 @@ public class Track {
     @Override
     public String toString() {
         return "Track [Title=" + title + ", Length=" + length + "]";
+    }
+    @Override
+    public void play() {
+        System.out.println("Playing Track: " + this.title);
+        System.out.println("Track length: " + this.length);
     }
 }
