@@ -1,7 +1,7 @@
 package hust.soict.ite6.aims.media;
 
 public class Disc extends Media {
-    private int length;
+    protected int length;
     private String director;
 
     // Constructor

@@ -38,9 +38,7 @@ public class DigitalVideoDisc extends Disc implements Playable {
     // Phương thức toString để in thông tin DVD
     @Override
     public String toString() {
-        return "DVD - " + getTitle() + " - " + getCategory() + " - " 
-                + (getDirector() != null ? getDirector() : "N/A") + " - " 
-                + (getLength() > 0 ? getLength() : "N/A") + ": " + getCost() + " $";
+        return "DVD [ID=" + getId() + ", Title=" + getTitle() + ", Category=" + getCategory() + ", Cost=" + getCost() + ", Length=" + length + " minutes]";
     }
     @Override
     public void play() {

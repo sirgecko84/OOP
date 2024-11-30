@@ -11,3 +11,25 @@ Question 2: If the passing object is not an instance of Media, what happens?
 Nếu đối tượng truyền vào không phải là một thể hiện của lớp Media, phương thức equals() sẽ trả về false. 
 Điều này là do trong đoạn mã, có một điều kiện kiểm tra lớp của đối tượng truyền vào (getClass() != obj.getClass()). 
 Nếu đối tượng không phải là một thể hiện của lớp Media hoặc một lớp con của Media, phương thức sẽ trả về false mà không cần tiếp tục so sánh các thuộc tính.
+
+Question 3: 11.	Polymorphism: Observe what happens and explain in detail.
+
+Trong bài tập này, polymorphism (đa hình) được minh họa qua phương thức toString(). Mặc dù tất cả các đối tượng đều được lưu trong ArrayList<Media>, nhưng khi gọi toString(), mỗi loại đối tượng (CD, DVD, Book) sẽ sử dụng phương thức toString() riêng biệt của lớp tương ứng.
+Điều này xảy ra nhờ việc ghi đè phương thức toString() trong từng lớp con, giúp hiển thị thông tin khác nhau tùy thuộc vào kiểu thực tế của đối tượng. Quá trình này được quyết định tại thời điểm chạy (runtime), là một ví dụ của polymorphism tại runtime.
+
+Question 4: What class should implement the Comparable interface?
+Lớp Media nên triển khai giao diện Comparable vì nó là lớp cha của các loại media khác (như Book, DVD, CD). 
+Điều này cho phép chúng ta định nghĩa quy tắc sắp xếp chung cho tất cả các loại media.
+
+Question 5: In those classes, how should you implement the compareTo()method be to reflect the ordering that we want?
+Trong các lớp đó, ta triển khai phương thức compareTo() như sau để phản ánh thứ tự sắp xếp mong muốn:
+
+So sánh theo tiêu đề trước: Dùng phương thức String.compareTo() để so sánh các tiêu đề (title) theo thứ tự bảng chữ cái.
+Nếu tiêu đề giống nhau: So sánh theo giá (cost) bằng cách sử dụng Float.compare().
+
+Question 6: Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+Không, giao diện Comparable chỉ cho phép một quy tắc sắp xếp mặc định vì compareTo() chỉ được định nghĩa một lần.
+Nếu cần nhiều quy tắc sắp xếp (ví dụ: title -> cost hoặc cost -> title), chúng ta nên sử dụng Comparator thay vì Comparable.
+
+Question 7: Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+Ta cần ghi đè phương thức compareTo() trong lớp con DVD để áp dụng quy tắc sắp xếp riêng.

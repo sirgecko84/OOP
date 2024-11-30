@@ -34,7 +34,8 @@ public class Book extends Media {
     // Phương thức toString để in thông tin của sách
     @Override
     public String toString() {
-        return "Book [ID=" + getId() + ", Title=" + getTitle() + ", Category=" + getCategory() 
-               + ", Cost=" + getCost() + ", Authors=" + authors + "]";
+        // Sử dụng danh sách tác giả và nối chúng thành chuỗi
+        String authorList = String.join(", ", authors);  // Nối các tác giả thành chuỗi
+        return "Book [ID=" + getId() + ", Title=" + getTitle() + ", Category=" + getCategory() + ", Cost=" + getCost() + ", Authors=" + authorList + "]";
     }
 }

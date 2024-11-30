@@ -39,4 +39,13 @@ public class Store {
             }
         }
     }
+    public Media searchMediaByTitle(String title) {
+        for (Media media : itemsInStore) { // Giả sử itemsInStore là danh sách chứa các Media trong Store
+            if (media.getTitle().equalsIgnoreCase(title)) {
+                return media;
+            }
+        }
+        return null; // Trả về null nếu không tìm thấy
+    }
+    
 }
