@@ -49,4 +49,17 @@ public abstract class Media {
     public void setCost(float cost) {
         this.cost = cost;
     }
+    // Ghi đè phương thức equals() của lớp Object
+    @Override
+    public boolean equals(Object obj) {
+        // Kiểm tra xem hai đối tượng có cùng tham chiếu không
+        if (this == obj) return true;
+        
+        // Kiểm tra đối tượng có phải là null hoặc không phải là instance của Media
+        if (obj == null || getClass() != obj.getClass()) return false;
+        
+        // Kiểm tra sự bằng nhau của tiêu đề (title)
+        Media media = (Media) obj;
+        return title.equals(media.title);
+    }
 }

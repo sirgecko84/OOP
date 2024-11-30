@@ -22,10 +22,17 @@ public class Track implements Playable {
 
     @Override
     public boolean equals(Object obj) {
+        // Kiểm tra nếu đối tượng này và đối tượng so sánh là giống nhau
         if (this == obj) return true;
+
+        // Kiểm tra nếu đối tượng truyền vào là null hoặc không phải là đối tượng cùng lớp
         if (obj == null || getClass() != obj.getClass()) return false;
+
+        // Ép kiểu đối tượng thành Track để truy cập các thuộc tính
         Track track = (Track) obj;
-        return title.equals(track.title);
+
+        // So sánh title và length
+        return title.equals(track.title) && length == track.length;
     }
 
     @Override
