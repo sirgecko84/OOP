@@ -1,0 +1,81 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.Aims",
+            "projectName": "GUICart_dc249717"
+        },
+        {
+            "type": "java",
+            "name": "StoreScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.StoreScreen",
+            "projectName": "GUICart_dc249717"
+        },
+        {
+            "type": "java",
+            "name": "StoreManagerScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.manager.StoreManagerScreen",
+            "projectName": "GUICart_dc249717"
+        },
+        {
+            "type": "java",
+            "name": "StoreAddItemScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.manager.StoreAddItemScreen",
+            "projectName": "GUICart_dc249717"
+        },
+        {
+            "type": "java",
+            "name": "StoreAddItemScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.manager.StoreAddItemScreen",
+            "projectName": "GUICart_d848f813",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml --add-exports=javafx.base/com.sun.javafx.logging=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "StoreManagerScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.manager.StoreManagerScreen",
+            "projectName": "GUICart_d848f813",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml --add-exports=javafx.base/com.sun.javafx.logging=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.Aims",
+            "projectName": "GUICart_d848f813"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.CartScreen",
+            "projectName": "GUICart_d848f813",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml --add-exports=javafx.base/com.sun.javafx.logging=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "StoreScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.ite6.aims.screen.StoreScreen",
+            "projectName": "GUICart_d848f813",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml --add-exports=javafx.base/com.sun.javafx.logging=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED"
+        }
+    ]
+}
